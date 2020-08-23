@@ -29,5 +29,11 @@ def input_to_index(user_input)
 end
 
 def turn(board)
-  puts "Please enter 1-9:"
+   counter = 0
+   board.each do |spaces|
+      if spaces == "X" || spaces == "O"
+         counter += 1
+      end
+   end
+   counter
 end
